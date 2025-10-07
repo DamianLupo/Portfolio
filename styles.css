@@ -62,18 +62,6 @@ nav {
     font-size: 24px;
     font-weight: bold;
     color: var(--accent);
-    display: flex;
-    align-items: center;
-}
-
-.logo-image {
-    height: 50px;
-    width: auto;
-    transition: transform 0.3s;
-}
-
-.logo-image:hover {
-    transform: scale(1.05);
 }
 
 .nav-links {
@@ -388,6 +376,35 @@ footer {
     border-top: 1px solid var(--border);
 }
 
+/* WhatsApp Float Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-icon {
+    width: 35px;
+    height: 35px;
+    color: white;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
@@ -403,10 +420,6 @@ footer {
         gap: 10px;
         font-size: 13px;
         justify-content: center;
-    }
-
-    .logo-image {
-        height: 40px;
     }
 
     .logo {
@@ -457,6 +470,18 @@ footer {
 
     .contact-item {
         font-size: 16px;
+    }
+
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .whatsapp-icon {
+        width: 30px;
+        height: 30px;
     }
 }
 
