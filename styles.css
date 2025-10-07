@@ -387,8 +387,19 @@ footer {
     }
 
     .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 13px;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav {
+        flex-direction: column;
         gap: 15px;
-        font-size: 14px;
     }
 
     .section-title {
@@ -396,6 +407,86 @@ footer {
     }
 
     .soft-skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cv-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .contact-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .soft-skill-icon {
+        font-size: 40px;
+    }
+
+    .soft-skill-card h3 {
+        font-size: 18px;
+    }
+
+    .skill-item h3 {
+        font-size: 16px;
+    }
+
+    .skill-item p {
+        font-size: 14px;
+    }
+
+    .project-content h3 {
+        font-size: 18px;
+    }
+
+    .project-content p {
+        font-size: 14px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .theme-toggle {
+        font-size: 12px;
+        padding: 6px 12px;
     }
 }
